@@ -81,4 +81,11 @@ main > * {
   border: 3px solid lightcoral;
 }
 
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */
