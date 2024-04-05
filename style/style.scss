@@ -63,8 +63,14 @@ img {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  //grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
+
+main >* {
+  overflow: hidden;
+}
+
 .section {
   grid-column: span 2;
 
@@ -74,12 +80,8 @@ img {
 
 }
 .aside {
-  grid-column: span 1;
-
-
-}
-.footer {
-  grid-column: span 3;
+  grid-column: 3/ span 1;
+  grid-row: 1/ span 1;
 
 
 }
