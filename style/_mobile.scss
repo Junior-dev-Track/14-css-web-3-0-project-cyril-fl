@@ -1,0 +1,64 @@
+//** Code **
+//*** header ***
+.header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav{
+  width: 33%;
+}
+
+.nav > * {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.innerLink {
+
+}
+
+//*** Main ***
+.main {
+  background-color: red;
+  height: 90%;
+  width: 100%;
+  padding: 20px;
+}
+
+main >* {
+  overflow: hidden;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  background-color: darkseagreen;
+
+}
+.aside {
+
+
+
+}
+
+.article {
+
+
+
+  height: 100%;
+  width: 100%;
+  background-color: lightseagreen;
+  border: 3px solid lightcoral;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
