@@ -6,7 +6,7 @@ function calcFont(value, refValue) {
 }
 
 console.log('')
-let fontSize = 20;
+let fontSize = 18;
 let line= 24;
 
     let font = calcFont(fontSize, 16)
@@ -20,7 +20,7 @@ console.log('__________________________')
 console.log('')
 let heightValue = 28
 
-let widthValue = 100
+let widthValue = 25
     let refWidth = 1440
     let refHeight = 1024
 
