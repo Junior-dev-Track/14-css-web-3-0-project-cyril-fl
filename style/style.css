@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -191,48 +192,148 @@ body {
     width: 100%;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 760px) {
+  .none {
+    display: none;
+  }
   .header {
-    height: 10%;
     width: 100%;
+    height: 9.088vw;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+  }
+  .logo {
+    flex-basis: 4.45vw;
   }
   .nav {
-    width: 33%;
+    width: 40%;
+    flex-basis: 38.83%;
+    text-transform: Capitalize;
+    font-size: 0.9375rem;
   }
   .nav > * {
-    width: 100%;
-    display: flex;
     justify-content: space-between;
   }
-  .main {
-    background-color: red;
-    height: 90%;
-    width: 100%;
-    padding: 20px;
+  .innerLink {
+    color: #5E607A;
   }
-  main > * {
+  .innerLink:hover {
+    color: #F15D51;
+  }
+  .innerLink:active {
+    color: #E9AA52;
+  }
+  .main {
+    width: 100%;
+    background-color: #F15D51;
+  }
+  .main > * {
     overflow: hidden;
   }
-  .section {
-    height: 100%;
-    width: 100%;
-    background-color: darkseagreen;
+  .sectionFigure {
+    overflow: hidden;
   }
-  .article {
-    height: 100%;
+  .sectionFigure .img {
     width: 100%;
-    background-color: lightseagreen;
-    border: 3px solid lightcoral;
+    object-position: right top;
   }
+  /*** Button ***/
+  .button {
+    border: none;
+    background-color: #F15D51;
+    text-transform: uppercase;
+    color: #FFFDFA;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.27rem;
+  }
+  .button:active {
+    background-color: #E9AA52;
+  }
+  /** Aside **/
   .aside {
-    display: flex;
+    background-color: #00001A;
+    color: #FFFDFA;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
+    padding: 2.22vw 1.67vw;
   }
+  .asideArticle p {
+    color: #C5C6CE;
+  }
+  /** Article **/
+  .article {
+    column-gap: 1.74vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .articleFigure {
+    width: 6.94vw;
+    aspect-ratio: 100/129;
+    object-fit: contain;
+    overflow: hidden;
+    grid-column: 1;
+    grid-row: 1/span 3;
+  }
+  .articleFigure img {
+    width: 100%;
+    height: 100%;
+    object-position: center bottom;
+    object-fit: cover;
+  }
+  .article h3 {
+    grid-column: 2/span 2;
+    grid-row: 1;
+  }
+  .article h4 {
+    grid-column: 2/span 2;
+    grid-row: 2;
+  }
+  .article .p {
+    grid-column: 2/span 2;
+    grid-row: 3;
+  }
+  .h1 {
+    font-size: 3.5rem;
+    line-height: 1em;
+    font-weight: 800;
+  }
+  .articleH3 {
+    font-size: 2rem;
+    line-height: 1em;
+    font-weight: 700;
+    color: #C5C6CE;
+    margin-bottom: 0.83vw;
+  }
+  .articleH4 {
+    font-size: 1.125rem;
+    line-height: 1.333em;
+    font-weight: 800;
+    margin-bottom: 0.69vw;
+  }
+  .asideH2 {
+    font-size: 2.5rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color: #E9AA52;
+    -webkit-text-stroke: 1px #00001A;
+  }
+  .asideH4 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 800;
+  }
+  .p {
+    font-size: 0.9375rem;
+    line-height: 1.733rem;
+    font-weight: 400;
+    color: #5E607A;
+  }
+  hr {
+    color: #5E607A;
+    width: 100%;
+  }
+  /* Notez que vous n'avez pas besoin de précéder le nom du fichier d'un underscore (_) dans une instruction @import */
 }
 
 /*# sourceMappingURL=style.css.map */
