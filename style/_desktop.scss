@@ -13,8 +13,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: lightblue;
-
 }
 .logo {
   flex-basis:  4.45vw;
@@ -47,7 +45,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.08vw;
-  background-color: dodgerblue;
+  //background-color: dodgerblue;
 }
 .main > * {
   overflow: hidden;
@@ -55,7 +53,6 @@ body{
 
 //** Section **
 .section {
-  background-color: cornflowerblue;
   grid-column: 1/span 2;
   width:  50.69vw;
   height: min-content ;
@@ -66,7 +63,6 @@ body{
 .sectionFigure {
   width: 100%;
   aspect-ratio: 5/2;
-  background-color: orange;
   grid-column: 1/span 2;
   overflow: hidden;
 }
@@ -83,7 +79,6 @@ body{
 .content {
   grid-column: 2;
   grid-row: 2;
-  background-color: #E9AA52;
 }
 
 /*** Button ***/
