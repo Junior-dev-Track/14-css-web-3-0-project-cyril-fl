@@ -1,8 +1,6 @@
-@import '_variables.scss';
-@import '_reset.scss';
-@import '_desktop.scss';
+@import 'variables.scss';
+@import 'reset.scss';
+@import 'mobile.scss';
+@import 'desktop.scss';
 
-@media screen and (max-width: 760px) {
-  @import '_mobile.scss'; /* Notez que vous n'avez pas besoin de précéder le nom du fichier d'un underscore (_) dans une instruction @import */
-}
 
