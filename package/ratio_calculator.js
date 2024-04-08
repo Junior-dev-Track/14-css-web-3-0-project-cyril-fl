@@ -18,16 +18,16 @@ console.log('__________________________')
 
 
 console.log('')
-let heightValue = 28
+let heightValue = 48
 
-let widthValue = 25
-    let refWidth = 1440
-    let refHeight = 1024
+let widthValue = 129
+    let refWidth = 375
+    let refHeight = 812
 
 
 
     let width = ratioCalculator(widthValue, refWidth)
-        let height = width*(refHeight/refWidth)
+        let height = heightValue*(refWidth/refHeight)
         let heightTiers = heightValue/3
         let widthTiers = widthValue/3
 
@@ -39,9 +39,9 @@ let widthValue = 25
 
 
 
-// console.log(`min-height: ${heightTiers.toFixed(2)}px;\n`+
-//     `height: ${height}%;\n`+
-//     `max-height: ${heightValue}px;`)
+console.log(`min-height: ${heightTiers.toFixed(2)}px;\n`+
+    `height: ${height}%;\n`+
+    `max-height: ${heightValue}px;`)
 
 console.log('');
 

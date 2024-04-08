@@ -21,7 +21,6 @@
     font-size: 0.9375rem;
   }
   .nav > * {
-
     display: flex;
     //background-color: blueviolet;
     justify-content: space-between;
@@ -83,7 +82,7 @@
     border: none;
     background-color: $red;
     width: 12.85vw;
-    height: 3.33vw;
+    height: 8.96vh;
     text-transform: uppercase;
     color: $white;
     font-size: 0.875rem;
@@ -116,10 +115,21 @@
   }
 
   /** Article **/
+  .section2 {
+    margin: 4.86vw 0;
+    background-color: #E9AA52;
+    display: flex;
+    justify-content: space-between;
+    //height: 8.96vw;
+  }
   .article {
     display: grid;
-    column-gap: 1.74vw;
-    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    background-color: darkolivegreen;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1.08vw;
+
   }
   .articleFigure {
     width: 6.94vw;
@@ -127,7 +137,7 @@
     object-fit: contain;
     overflow: hidden;
     grid-column: 1;
-    grid-row: 1/span 3;
+    //grid-row: 1/span 3;
   }
   .articleFigure img {
     width: 100%;
@@ -135,20 +145,32 @@
     object-position: center bottom;
     object-fit: cover;
   }
-  .article h3 {
+  .articleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    background-color: aqua;
     grid-column: 2/ span 2;
-    grid-row: 1;
-    //background-color: rebeccapurple;
+  }
+  .article h3 {
+    //grid-column: 2/ span 2;
+    //grid-row: 1;
+    background-color: rebeccapurple;
   }
   .article h4 {
-    grid-column: 2/ span 2;
-    grid-row: 2;
-    //background-color: lightblue;
+    //grid-column: 2/ span 2;
+    //grid-row: 2;
+    background-color: lightblue;
   }
   .article .p {
-    grid-column: 2/ span 2;
-    grid-row: 3;
+    //grid-column: 2/ span 2;
+    //grid-row: 3;
   }
+
+
+
 
   //*** Font ***
   .h1 {
@@ -161,13 +183,13 @@
     line-height: 1.000em;
     font-weight: 700;
     color: $lightGrey;
-    margin-bottom: 0.83vw;
+    //margin-bottom: 0.83vw;
   }
   .articleH4 {
     font-size: 1.125rem;
     line-height: 1.333em;
     font-weight: 800;
-    margin-bottom: 0.69vw;
+    //margin-bottom: 0.69vw;
 
 
   }
@@ -188,7 +210,7 @@
     line-height: 1.733rem;
     font-weight: 400;
     color: #5E607A;
-    //background-color: orange;
+    background-color: orange;
   }
   hr {
     color: #5E607A;
